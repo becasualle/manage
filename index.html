@@ -7,30 +7,73 @@
     <title>Manage Landing Page</title>
   </head>
   <body>
-    <nav class="relative container mx-auto p-6">
+    <nav class="navbar relative container mx-auto p-6">
       <!-- Flex container -->
-      <div class="flex items-center justify-between">
+      <div class="navbar-content flex items-center justify-between">
         <!-- Logo -->
-        <div class="pt-2">
-          <img src="./img/logo.svg" alt="" />
+        <div class="image-container pt-2">
+          <img class="navbar__image" src="./img/logo.svg" />
         </div>
         <!-- Menu Items -->
         <!-- hide menu when <md screensize -->
-        <div class="hidden md:flex space-x-6">
-          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-          <a href="#" class="hover:text-darkGrayishBlue">About us</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        <div class="links-conatiner hidden md:flex space-x-6">
+          <a href="#" class="navbar__link hover:text-darkGrayishBlue"
+            >Pricing</a
+          >
+          <a href="#" class="navbar__link hover:text-darkGrayishBlue"
+            >Product</a
+          >
+          <a href="#" class="navbar__link hover:text-darkGrayishBlue"
+            >About us</a
+          >
+          <a href="#" class="navbar__link hover:text-darkGrayishBlue"
+            >Careers</a
+          >
+          <a href="#" class="navbar__link hover:text-darkGrayishBlue"
+            >Community</a
+          >
         </div>
         <!-- Button -->
         <a
           href="#"
-          class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight"
+          class="navbar__btn hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight"
         >
           Get Started</a
         >
       </div>
     </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div
+        class="hero-container container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
+      >
+        <div
+          class="hero-text flex flex-col items-center mb-32 space-y-12 md:w-1/2 md:items-start"
+        >
+          <h1
+            class="hero__title max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            Bring everyone together to build better products
+          </h1>
+          <p
+            class="hero__para max-w-sm text-center text-darkGryishBlue md:text-left"
+          >
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <div class="hero__btn flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight"
+            >
+              Get Started</a
+            >
+          </div>
+        </div>
+        <div class="hero__img md:w-1/2">
+          <img src="img/illustration-intro.svg" alt="" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
